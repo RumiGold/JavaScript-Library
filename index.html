@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+  </head>
+  <body class="flex justify-center min-h-screen p-10">
+    <div class="w-full max-w-lg">
+      <form class="shadow p-5 border-2">
+        <div class="m-5">
+          <label class="block mb-3 text-gray-700 text-sm font-bold"
+            >Book Name
+          </label>
+          <input
+            type="text"
+            placeholder=""
+            class="border-2 rounded px-3 py-2 w-full focus:outline-none text-gray-700 leading-tight focus:shadow-outline focus:border-blue-500"
+            id="book-name"
+          />
+        </div>
+
+        <div class="m-5">
+          <label class="block mb-3 text-gray-700 text-sm font-bold"
+            >Author</label
+          >
+          <input
+            type="text"
+            placeholder=""
+            class="border-2 rounded px-3 py-2 w-full focus:outline-none text-gray-700 leading-tight focus:shadow-outline focus:border-blue-500"
+            id="book-author"
+          />
+        </div>
+
+        <div class="m-5">
+          <label class="block mb-3 text-gray-700 text-sm font-bold"
+            >Pages</label
+          >
+          <input
+            type="text"
+            class="border-2 rounded px-3 py-2 w-full focus:outline-none text-gray-700 leading-tight focus:shadow-outline focus:border-blue-500"
+            id="book-pages"
+          />
+        </div>
+
+        <div class="flex items-center m-5">
+          <input
+            id="book-read"
+            type="checkbox"
+            value=""
+            class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600 focus:border-blue-500"
+          />
+          <label
+            for="link-checkbox"
+            class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+          >
+            I have Read This book</label
+          >
+        </div>
+
+        <div class="m-5">
+          <button
+            id="add-button"
+            class="mt-5 bg-blue-600 w-full rounded py-2 text-white hover:bg-blue-500"
+          >
+            Add Book
+          </button>
+        </div>
+      </form>
+      <div id="library">
+        
+      </div>
+    </div>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
